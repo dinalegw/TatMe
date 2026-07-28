@@ -158,9 +158,3 @@ cd tatme
 npm install prisma @prisma/client
 npx prisma init
 ```
-
-Setup instructions will be expanded in `DEPLOYMENT.md` once environment variables (database URL, Stripe keys, auth secrets, maps API key) are finalized.
-
----
-
-**Next step:** answer the open questions in Section 8, then we build `ARCHITECTURE.md` and `DATABASE.md` from this document.
