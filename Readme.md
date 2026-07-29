@@ -63,6 +63,9 @@ TatMe's differentiation, stated plainly: **it's the only kind of site that treat
 5. Track deposits, payouts, and revenue.
 6. Manage waivers/consent records (legal record-keeping).
 
+
+
+
 ---
 
 
