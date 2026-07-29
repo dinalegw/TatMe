@@ -108,6 +108,9 @@ Full schema with fields, relations, and constraints will live in `DATABASE.md`.
 ---
 
 
+
+
+
 ## 6. Project Structure (Planned)
 
 ```
