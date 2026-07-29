@@ -6,6 +6,8 @@
 
 ---
 
+
+
 ## 1. What TatMe Is
 
 TatMe is a full-stack e-commerce and booking site for a tattoo artist/studio. A visitor can:
