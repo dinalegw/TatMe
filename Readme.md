@@ -21,6 +21,9 @@ TatMe is a full-stack e-commerce and booking site for a tattoo artist/studio. A 
 
 On the artist/admin side, TatMe replaces the "20 emails back and forth" and DM-based scheduling that most solo artists and small studios still run on, with a single system for calendar, deposits, intake forms, and client history.
 
+
+
+
 ---
 
 
