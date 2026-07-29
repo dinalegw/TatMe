@@ -156,6 +156,9 @@ tatme/
 - Brand direction: dark/edgy aesthetic vs. clean fine-art/spa aesthetic — this drives the whole design system (see market research above; both are proven to convert, but they target different clients).
 - Jurisdiction for waiver/consent form legal requirements (varies by country/state).
 
+
+
+
 ---
 
 ## 9. Getting Started (once scaffolding begins)
