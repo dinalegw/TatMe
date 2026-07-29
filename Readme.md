@@ -128,6 +128,9 @@ tatme/
 
 ---
 
+
+
+
 ## 7. Build Phases
 
 1. **Foundation** — Next.js scaffold, DB schema, auth, base layout/design system.
@@ -137,6 +140,8 @@ tatme/
 5. **Dashboards** — client dashboard, artist/admin dashboard (calendar, flash inventory, client CRM).
 6. **Notifications** — email/SMS confirmations and reminders.
 7. **Polish & Launch** — performance (Core Web Vitals, image optimization), SEO, mobile QA, deployment.
+
+
 
 ---
 
