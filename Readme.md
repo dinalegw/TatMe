@@ -84,9 +84,6 @@ TatMe's differentiation, stated plainly: **it's the only kind of site that treat
 
 This is a starting recommendation, not a locked decision — flag before implementation if you want a different stack (e.g. Supabase for auth+db+storage combined).
 
-
-
-
 ---
 
 
