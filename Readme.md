@@ -86,9 +86,6 @@ This is a starting recommendation, not a locked decision — flag before impleme
 
 ---
 
-
-
-
 ## 5. Domain Model (High-Level)
 
 Core entities the database schema will be built around:
