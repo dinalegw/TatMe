@@ -24,9 +24,6 @@ On the artist/admin side, TatMe replaces the "20 emails back and forth" and DM-b
 
 ---
 
-
-
-
 ## 2. Why This Needs to Be Different (Market Findings)
 
 Research into the current tattoo booking/e-commerce landscape (2026) surfaced two failure modes TatMe is explicitly built to avoid:
