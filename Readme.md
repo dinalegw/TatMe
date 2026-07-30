@@ -7,11 +7,7 @@
 > This README is the root document for the project. Every other doc (architecture, database schema, API contracts, deployment) is scaffolded from the decisions made here. Read this first before touching code.
 
 
-
-
 ---
-
-
 
 ## 1. What TatMe Is
 
