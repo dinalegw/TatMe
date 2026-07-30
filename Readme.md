@@ -66,9 +66,6 @@ TatMe's differentiation, stated plainly: **it's the only kind of site that treat
 
 ---
 
-
-
-
 ## 4. Proposed Tech Stack
 
 | Layer | Choice | Why |
