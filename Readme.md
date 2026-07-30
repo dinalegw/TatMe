@@ -42,10 +42,6 @@ Patterns worth stealing, confirmed across multiple tattoo-specific platforms:
 
 TatMe's differentiation, stated plainly: **it's the only kind of site that treats "browse the art" and "book the session" as one continuous flow**, with the shop-vs-house-call decision, deposit, and waiver all handled before the client ever needs to send a message.
 
-
-
-
-
 ---
 
 
