@@ -2,6 +2,8 @@
 
 **A tattoo portfolio, storefront, and booking platform — browse designs, book a session at the shop or have the artist come to you.**
 
+
+
 > This README is the root document for the project. Every other doc (architecture, database schema, API contracts, deployment) is scaffolded from the decisions made here. Read this first before touching code.
 
 
