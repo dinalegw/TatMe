@@ -44,9 +44,6 @@ TatMe's differentiation, stated plainly: **it's the only kind of site that treat
 
 ---
 
-
-
-
 ## 3. Core User Flows
 
 ### Client
