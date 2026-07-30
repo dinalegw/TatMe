@@ -103,12 +103,7 @@ Core entities the database schema will be built around:
 
 Full schema with fields, relations, and constraints will live in `DATABASE.md`.
 
-
-
-
 ---
-
-
 
 
 
