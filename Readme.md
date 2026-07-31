@@ -130,9 +130,6 @@ tatme/
 
 ---
 
-
-
-
 ## 7. Build Phases
 
 1. **Foundation** — Next.js scaffold, DB schema, auth, base layout/design system.
