@@ -159,8 +159,6 @@ tatme/
 - Jurisdiction for waiver/consent form legal requirements (varies by country/state).
 
 
-
-
 ---
 
 
