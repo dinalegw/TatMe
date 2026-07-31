@@ -161,7 +161,6 @@ tatme/
 
 ---
 
-
 ## 9. Getting Started (once scaffolding begins)
 
 ```bash
