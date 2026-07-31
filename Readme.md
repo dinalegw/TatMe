@@ -147,9 +147,6 @@ tatme/
 
 ---
 
-
-
-
 ## 8. Open Questions (Answer Before Scaffolding Begins)
 
 - Single artist or multi-artist studio? (Affects auth roles, calendar complexity, payout splitting.)
