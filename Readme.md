@@ -143,8 +143,6 @@ tatme/
 6. **Notifications** — email/SMS confirmations and reminders.
 7. **Polish & Launch** — performance (Core Web Vitals, image optimization), SEO, mobile QA, deployment.
 
-
-
 ---
 
 ## 8. Open Questions (Answer Before Scaffolding Begins)
