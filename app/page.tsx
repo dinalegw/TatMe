@@ -14,6 +14,23 @@ import { bookingSteps, designs } from "@/lib/gallery";
 
 const filters = ["Fine line", "Blackwork", "Minimal", "Sleeve", "Flash"];
 const modes = ["In-shop", "We come to you"];
+const studioFeatures = [
+  {
+    title: "Availability",
+    Icon: CalendarDays,
+    copy: "Recurring shop hours plus one-off travel windows."
+  },
+  {
+    title: "Deposits",
+    Icon: ReceiptText,
+    copy: "Stripe references and policy snapshots per booking."
+  },
+  {
+    title: "Consent",
+    Icon: ShieldCheck,
+    copy: "Signed waiver records tied to the client session."
+  }
+];
 
 export default function Home() {
   return (
@@ -197,15 +214,11 @@ export default function Home() {
 
       <section id="admin" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid gap-5 md:grid-cols-3">
-          {[
-            ["Availability", CalendarDays, "Recurring shop hours plus one-off travel windows."],
-            ["Deposits", ReceiptText, "Stripe references and policy snapshots per booking."],
-            ["Consent", ShieldCheck, "Signed waiver records tied to the client session."]
-          ].map(([title, Icon, copy]) => (
-            <div className="rounded-lg border border-ink/10 bg-white p-6 shadow-soft" key={String(title)}>
+          {studioFeatures.map(({ title, Icon, copy }) => (
+            <div className="rounded-lg border border-ink/10 bg-white p-6 shadow-soft" key={title}>
               <Icon className="text-fern" size={25} />
-              <h3 className="mt-5 text-lg font-bold">{title as string}</h3>
-              <p className="mt-2 text-sm leading-6 text-ink/64">{copy as string}</p>
+              <h3 className="mt-5 text-lg font-bold">{title}</h3>
+              <p className="mt-2 text-sm leading-6 text-ink/64">{copy}</p>
               <div className="mt-5 flex items-center gap-2 text-sm font-bold text-fern">
                 <Check size={16} />
                 Admin ready
