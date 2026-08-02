@@ -177,6 +177,23 @@ button {
   color: var(--ink);
 }
 
+.mvpStats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.mvpStats span,
+.dashboardStats span {
+  background: rgba(255, 250, 242, 0.12);
+  border: 1px solid rgba(255, 250, 242, 0.18);
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 900;
+  padding: 8px 12px;
+}
+
 .section,
 .bookingIntro,
 .stepGrid {
@@ -218,6 +235,11 @@ button {
   padding: 0 12px;
 }
 
+.filterBar .activeFilter {
+  background: var(--ink);
+  color: var(--paper);
+}
+
 .designGrid,
 .featureGrid {
   display: grid;
@@ -233,6 +255,11 @@ button {
   border-radius: 8px;
   box-shadow: 0 18px 60px rgba(21, 21, 21, 0.12);
   overflow: hidden;
+}
+
+.selectedCard {
+  border-color: var(--ember);
+  box-shadow: 0 18px 60px rgba(200, 74, 49, 0.22);
 }
 
 .designImageWrap {
@@ -288,6 +315,7 @@ button {
 
 .cardAction {
   width: 100%;
+  border: 0;
 }
 
 .bookingSection {
@@ -301,6 +329,11 @@ button {
   grid-template-columns: 0.85fr 1.15fr;
 }
 
+.mvpBookingIntro {
+  align-items: start;
+  grid-template-columns: 0.75fr 1.25fr;
+}
+
 .bookingIntro .sectionKicker {
   color: var(--brass);
 }
@@ -308,6 +341,15 @@ button {
 .bookingIntro p,
 .modeCard p {
   color: rgba(255, 250, 242, 0.72);
+}
+
+.notice {
+  background: rgba(181, 139, 69, 0.18);
+  border: 1px solid rgba(181, 139, 69, 0.38);
+  border-radius: 8px;
+  color: var(--paper) !important;
+  font-weight: 800;
+  padding: 12px;
 }
 
 .modeGrid {
@@ -347,6 +389,12 @@ button {
   padding-top: 0;
 }
 
+.compactSteps {
+  grid-template-columns: 1fr;
+  margin: 24px 0 0;
+  padding: 0;
+}
+
 .stepCard span {
   align-items: center;
   background: var(--ember);
@@ -375,6 +423,171 @@ button {
   margin-top: 18px;
 }
 
+.bookingForm {
+  background: var(--paper);
+  border-radius: 8px;
+  color: var(--ink);
+  display: grid;
+  gap: 16px;
+  padding: 22px;
+}
+
+.formSplit {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.bookingForm label {
+  display: grid;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.bookingForm input,
+.bookingForm select,
+.bookingForm textarea {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--ink);
+  font: inherit;
+  min-height: 44px;
+  padding: 10px 12px;
+  width: 100%;
+}
+
+.bookingForm textarea {
+  min-height: 96px;
+  resize: vertical;
+}
+
+.checkRow {
+  align-items: start;
+  display: grid !important;
+  gap: 10px !important;
+  grid-template-columns: 18px 1fr;
+  line-height: 1.5;
+}
+
+.checkRow input {
+  min-height: 18px;
+  padding: 0;
+}
+
+.submitButton,
+.requestActions button {
+  background: var(--ember);
+  border: 0;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 900;
+  min-height: 46px;
+  padding: 0 16px;
+}
+
+.dashboardSection {
+  padding-top: 64px;
+}
+
+.dashboardStats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.dashboardStats span {
+  background: var(--bone);
+  border-color: var(--line);
+  color: var(--ink);
+}
+
+.dashboardGrid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 320px 1fr;
+  margin-top: 36px;
+}
+
+.selectedPanel,
+.requestCard {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 18px 60px rgba(21, 21, 21, 0.08);
+  padding: 22px;
+}
+
+.selectedPanel {
+  align-self: start;
+  display: grid;
+  gap: 10px;
+}
+
+.selectedPanel h3,
+.selectedPanel p,
+.requestCard h3,
+.requestCard p {
+  margin: 0;
+}
+
+.selectedPanel p {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.selectedPanel span {
+  color: rgba(21, 21, 21, 0.62);
+  font-weight: 800;
+}
+
+.requestList {
+  display: grid;
+  gap: 14px;
+}
+
+.requestCard {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 1fr 220px;
+}
+
+.requestMeta {
+  color: var(--ember) !important;
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.requestActions {
+  align-items: end;
+  display: grid;
+  gap: 10px;
+  justify-items: end;
+}
+
+.requestActions span {
+  background: var(--bone);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+  padding: 7px 10px;
+}
+
+.requestActions .confirmed {
+  background: rgba(51, 102, 90, 0.14);
+  color: var(--fern);
+}
+
+.requestActions a {
+  color: var(--fern);
+  font-size: 13px;
+  font-weight: 900;
+  overflow-wrap: anywhere;
+}
+
 .footer {
   border-top: 1px solid var(--line);
   color: rgba(21, 21, 21, 0.62);
@@ -401,7 +614,14 @@ button {
   .designGrid,
   .featureGrid,
   .modeGrid,
-  .stepGrid {
+  .stepGrid,
+  .formSplit,
+  .dashboardGrid,
+  .requestCard {
     grid-template-columns: 1fr;
+  }
+
+  .requestActions {
+    justify-items: start;
   }
 }
