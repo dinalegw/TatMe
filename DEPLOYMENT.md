@@ -3,11 +3,7 @@
 ## Required Environment
 
 ```bash
-DATABASE_URL=
-NEXTAUTH_SECRET=
-NEXTAUTH_URL=
-STRIPE_SECRET_KEY=
-STRIPE_WEBHOOK_SECRET=
+NEXT_PUBLIC_SITE_URL=
 ```
 
 Add provider-specific values later for media storage, maps, email, and SMS.
@@ -16,10 +12,11 @@ Add provider-specific values later for media storage, maps, email, and SMS.
 
 ```bash
 npm install
-npm run prisma:generate
 npm run dev
 ```
 
+This project uses npm as its package manager.
+
 ## Hosting
 
-The intended default is Vercel for the Next.js app and a managed PostgreSQL provider such as Neon, Supabase, or RDS.
+The intended default is Vercel for the Next.js app. Add managed storage later when TatMe needs real bookings, users, and payments.
