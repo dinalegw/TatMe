@@ -1,14 +1,27 @@
 # TatMe API Contract
 
-TatMe is Next.js-only for this scaffold. Future mutations should prefer Server Actions for forms that stay inside the app and route handlers only when an external callback is needed.
+TatMe is Next.js-only for this MVP. Current booking requests are stored in browser `localStorage`, so no server API is required yet.
 
-## Planned Actions
+## Current Client Actions
+
+- Select a design.
+- Filter designs by style.
+- Submit a booking request after intake, consent, and deposit acknowledgement.
+- Confirm a pending request in the studio queue.
+
+## Planned Server Actions
 
 - `createBookingRequest`: creates a pending booking from design, artist, type, selected time, and location.
 - `submitIntakeForm`: attaches structured intake answers and reference images.
 - `createDepositRecord`: stores a deposit requirement once payment handling is chosen.
 - `signWaiver`: stores consent text, legal name, signature reference, and timestamp.
 - `updateAvailabilityWindow`: lets artists manage shop or house-call windows.
+
+## Planned AI Actions
+
+- `triageIntake`: extracts style, placement, size, risk notes, and missing details from client notes.
+- `recommendArtist`: matches a request to artists by style, availability, and travel radius.
+- `draftClientReply`: drafts a studio approval or follow-up message from booking context.
 
 ## Planned Route Handlers
 

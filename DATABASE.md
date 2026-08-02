@@ -1,6 +1,8 @@
 # TatMe Data Notes
 
-This scaffold is Next.js-only for now, so there is no database adapter or ORM wired in.
+This MVP is Next.js-only for now, so there is no database adapter or ORM wired in.
+
+Current booking requests are stored in browser `localStorage` as `tatme-bookings`.
 
 ## Future Entities
 

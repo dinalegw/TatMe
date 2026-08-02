@@ -15,7 +15,7 @@ npm install
 npm run dev
 ```
 
-This project uses npm as its package manager.
+This project uses npm as its package manager. The MVP stores booking requests in the browser, so no production database is required for the current demo.
 
 ## Hosting
 
