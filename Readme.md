@@ -1,65 +1,52 @@
 # TatMe
 
-**TatMe is a Next.js MVP for a tattoo portfolio, booking, consent, deposit, and studio review flow.**
+TatMe is a polished tattoo-booking MVP that combines portfolio browsing, design selection, booking intake, consent/deposit acknowledgement, and a studio review queue in one experience.
 
-The product idea is simple: a client should be able to browse tattoo work and start a real booking request in one continuous flow, without screenshotting a design and moving the conversation into DMs.
+The goal is simple: let a client discover tattoo work, choose a design, and start a real booking request without leaving the site or switching into DMs.
 
----
+## What the MVP includes
 
-## Current MVP
+TatMe currently offers a working demo experience with:
 
-TatMe currently runs as a **Next.js + TypeScript + npm** app. It does not use a database yet. Booking requests are saved in the browser with `localStorage` under the key `tatme-bookings`.
+- A public tattoo gallery with style filtering
+- Design cards that pre-fill placement, size, and budget guidance
+- A booking form for client details, session type, date/time, placement, size, budget, address, and notes
+- Deposit-policy and digital-consent acknowledgement steps
+- A studio dashboard showing pending and confirmed requests
+- Local persistence of requests in the browser via `localStorage`
 
-The MVP includes:
+## Current stack
 
-- Public tattoo gallery with style filters.
-- Design selection that pre-fills placement, size, and budget guidance.
-- Booking request form with client details, in-shop vs house-call mode, date/time, placement, size, budget, address, and notes.
-- Deposit-policy acknowledgement.
-- Digital consent readiness acknowledgement.
-- Studio dashboard queue with pending and confirmed booking requests.
-- Local request confirmation from the dashboard.
+- Next.js 14 App Router
+- React 18
+- TypeScript
+- npm
+- Plain global CSS
+- Remote image assets for the demo experience
 
----
+This MVP does not yet include a database, authentication, payments, or AI-assisted intake.
 
-## Tech Stack
-
-| Layer | Current Choice |
-|---|---|
-| Framework | Next.js 14 App Router |
-| Language | TypeScript |
-| Package manager | npm |
-| Styling | Plain global CSS |
-| Persistence | Browser `localStorage` for MVP demo data |
-| Images | `next/image` with remote Unsplash demo assets |
-
-No Tailwind, Prisma, database, auth provider, payment provider, or AI provider is currently wired into the app.
-
----
-
-## Project Structure
+## Project structure
 
 ```text
 TatMe/
 ├── app/
-│   ├── globals.css          # App-wide styling
-│   ├── layout.tsx           # Root layout and metadata
-│   └── page.tsx             # Home route renders the MVP component
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
 ├── components/
-│   └── TatmeMvp.tsx         # Interactive MVP: gallery, booking, dashboard
+│   └── TatmeMvp.tsx
 ├── lib/
-│   └── gallery.ts           # Typed design data, booking types, seed requests
-├── API.md                   # Current client actions and planned API/AI actions
-├── ARCHITECTURE.md          # MVP architecture notes
-├── DATABASE.md              # Data notes and future entities
-├── DEPLOYMENT.md            # Local and deployment notes
+│   └── gallery.ts
+├── API.md
+├── ARCHITECTURE.md
+├── DATABASE.md
+├── DEPLOYMENT.md
 ├── package.json
 └── package-lock.json
 ```
 
----
-
-## Getting Started
+## Getting started
 
 Install dependencies:
 
@@ -67,13 +54,13 @@ Install dependencies:
 npm install
 ```
 
-Run the development server:
+Run the app locally:
 
 ```bash
 npm run dev
 ```
 
-Open:
+Then open:
 
 ```text
 http://localhost:3000
@@ -85,79 +72,30 @@ Build for production:
 npm run build
 ```
 
----
+## Demo flow
 
-## Core User Flow
-
-### Client
+### Client side
 
 1. Browse the gallery.
 2. Filter designs by style.
 3. Select a tattoo design.
 4. Choose in-shop or house-call booking.
-5. Enter contact details, date/time, placement, size, budget, and notes.
-6. Accept the deposit-policy acknowledgement.
-7. Confirm digital-consent readiness.
-8. Submit the booking request.
+5. Fill out the intake form and accept the required acknowledgements.
+6. Submit the request.
 
-### Studio
+### Studio side
 
 1. Review incoming requests in the dashboard queue.
-2. See client, design, date/time, session type, placement, size, and notes.
-3. Confirm pending requests locally.
+2. See the client, design, session details, placement, size, and notes.
+3. Confirm requests from the same interface.
 
----
+## Notes on current state
 
-## Product Direction
+Booking requests are stored locally in the browser under the key `tatme-bookings`, which makes the demo easy to run without a backend. The next phase will likely add database persistence, authentication, real availability, payment handling, and digital waivers.
 
-TatMe is designed to avoid the common tattoo-site failure mode: beautiful portfolio, weak booking path. The product should keep the art, intake, deposit, consent, and studio review process connected.
+## Verification
 
-Important future capabilities:
-
-- Real database persistence for bookings, clients, designs, and artists.
-- Client and studio authentication.
-- Real availability calendar for in-shop and house-call windows.
-- Payment provider integration for deposits.
-- Digital signature capture and waiver export.
-- Email/SMS confirmations and reminders.
-- Admin tools for flash inventory, client history, healed photos, and payouts.
-- AI-assisted intake triage for style, placement, size, budget, risk notes, and missing information.
-
----
-
-## Future Data Model
-
-The likely production entities are:
-
-- `User`
-- `ArtistProfile`
-- `Design`
-- `Availability`
-- `Booking`
-- `IntakeForm`
-- `Deposit`
-- `Waiver`
-- `Review`
-
-For the MVP, these are represented by typed in-app data in `lib/gallery.ts` and browser-local booking requests.
-
----
-
-## Open Decisions
-
-- Single artist or multi-artist studio?
-- One shop location or multiple?
-- Exact deposit amount and cancellation/reschedule policy?
-- Waiver jurisdiction and legal retention requirements?
-- Payment provider choice?
-- Auth provider choice?
-- AI provider and intake triage design?
-
----
-
-## Current Verification
-
-The MVP has been verified with:
+The current MVP has been built successfully with:
 
 ```bash
 npm run build
