@@ -88,6 +88,8 @@ npm run build
 
 ### Client side
 
+
+
 1. Browse the gallery.
 2. Filter designs by style.
 3. Select a tattoo design.
