@@ -8,6 +8,8 @@ The goal is simple: let a client discover tattoo work, choose a design, and star
 
 ## What the MVP includes
 
+
+
 TatMe currently offers a working demo experience with:
 
 - A public tattoo gallery with style filtering
