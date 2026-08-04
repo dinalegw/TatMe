@@ -36,6 +36,8 @@ This MVP does not yet include a database, authentication, payments, or AI-assist
 
 ## Project structure
 
+
+
 ```text
 TatMe/
 ├── app/
@@ -53,6 +55,8 @@ TatMe/
 ├── package.json
 └── package-lock.json
 ```
+
+
 
 ## Getting started
 
