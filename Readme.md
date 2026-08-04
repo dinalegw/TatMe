@@ -1,42 +1,77 @@
 # TatMe
 
+TatMe is a tattoo booking MVP for artists and studios. It combines portfolio discovery, flash/design selection, booking intake, deposit and consent acknowledgement, and a lightweight studio review queue in one flow.
 
+The product goal is simple: help a client choose a tattoo, share the details a studio needs, and create a booking request without moving the conversation into DMs.
 
-TatMe is a polished tattoo-booking MVP that combines portfolio browsing, design selection, booking intake, consent/deposit acknowledgement, and a studio review queue in one experience.
+## Current Status
 
-The goal is simple: let a client discover tattoo work, choose a design, and start a real booking request without leaving the site or switching into DMs.
+TatMe is currently a frontend-only Next.js demo. It is useful for validating the booking journey, studio workflow, and product direction before adding production services such as authentication, database persistence, payments, notifications, and AI-assisted intake.
 
-## What the MVP includes
+Current booking requests are stored in the browser with `localStorage` under the key `tatme-bookings`.
 
+## MVP Features
 
+- Public tattoo gallery with style filters.
+- Design cards with artist, style, placement, size, price, deposit, and availability metadata.
+- Design selection that pre-fills booking guidance.
+- Client booking form for contact details, session type, date, time, placement, size, budget, address, and notes.
+- Support for in-shop and house-call request modes.
+- Deposit-policy and digital-consent acknowledgement fields.
+- Studio dashboard with pending and confirmed booking requests.
+- Local confirmation action for studio review.
 
-TatMe currently offers a working demo experience with:
-
-- A public tattoo gallery with style filtering
-- Design cards that pre-fill placement, size, and budget guidance
-- A booking form for client details, session type, date/time, placement, size, budget, address, and notes
-- Deposit-policy and digital-consent acknowledgement steps
-- A studio dashboard showing pending and confirmed requests
-- Local persistence of requests in the browser via `localStorage`
-
-
-
-## Current stack
+## Tech Stack
 
 - Next.js 14 App Router
 - React 18
 - TypeScript
 - npm
-- Plain global CSS
-- Remote image assets for the demo experience
+- Global CSS
+- Remote demo images
 
-This MVP does not yet include a database, authentication, payments, or AI-assisted intake.
+## Getting Started
 
+Install dependencies:
 
+```bash
+npm install
+```
 
-## Project structure
+Run the development server:
 
+```bash
+npm run dev
+```
 
+Open the app:
+
+```text
+http://localhost:3000
+```
+
+Create a production build:
+
+```bash
+npm run build
+```
+
+Start a production server after building:
+
+```bash
+npm run start
+```
+
+## Scripts
+
+| Command | Purpose |
+| --- | --- |
+| `npm run dev` | Start the local Next.js development server. |
+| `npm run build` | Build the app for production. |
+| `npm run start` | Serve the production build. |
+| `npm run lint` | Run the Next.js lint command. |
+
+## Project Structure
 
 ```text
 TatMe/
@@ -52,69 +87,72 @@ TatMe/
 ├── ARCHITECTURE.md
 ├── DATABASE.md
 ├── DEPLOYMENT.md
+├── Readme.md
 ├── package.json
 └── package-lock.json
 ```
 
+## Key Files
 
+| File | Responsibility |
+| --- | --- |
+| `app/page.tsx` | Renders the TatMe MVP surface. |
+| `components/TatmeMvp.tsx` | Owns the gallery, booking form, local request storage, and studio queue UI. |
+| `lib/gallery.ts` | Holds typed demo data, booking request types, available slots, and seed requests. |
+| `app/globals.css` | Contains the current visual system and responsive layout styles. |
+| `API.md` | Captures planned server and AI action contracts. |
+| `ARCHITECTURE.md` | Documents current boundaries and near-term build order. |
+| `DATABASE.md` | Defines future product entities and persistence notes. |
+| `DEPLOYMENT.md` | Notes deployment assumptions and environment setup. |
 
-## Getting started
+## Demo Flow
 
-Install dependencies:
+### Client
 
-```bash
-npm install
-```
-
-Run the app locally:
-
-```bash
-npm run dev
-```
-
-Then open:
-
-```text
-http://localhost:3000
-```
-
-Build for production:
-
-```bash
-npm run build
-```
-
-## Demo flow
-
-### Client side
-
-
-
-1. Browse the gallery.
+1. Browse the tattoo gallery.
 2. Filter designs by style.
-3. Select a tattoo design.
+3. Select a design.
 4. Choose in-shop or house-call booking.
-5. Fill out the intake form and accept the required acknowledgements.
-6. Submit the request.
+5. Fill out intake details.
+6. Accept deposit and consent acknowledgements.
+7. Submit the booking request.
 
-### Studio side
+### Studio
 
-1. Review incoming requests in the dashboard queue.
-2. See the client, design, session details, placement, size, and notes.
-3. Confirm requests from the same interface.
+1. Review requests in the studio queue.
+2. Check client, design, placement, size, budget, date, time, and notes.
+3. Confirm pending requests from the dashboard.
 
-## Notes on current state
+## Current Limitations
 
-Booking requests are stored locally in the browser under the key `tatme-bookings`, which makes the demo easy to run without a backend. The next phase will likely add database persistence, authentication, real availability, payment handling, and digital waivers.
+- No backend API is connected yet.
+- No production database or ORM is configured yet.
+- No authentication or studio admin roles are implemented yet.
+- No real payment processor is connected yet.
+- No digital signature capture or waiver export exists yet.
+- No AI triage or artist matching is connected yet.
 
+## Recommended Next Build Order
 
+1. Add real persistence for booking requests.
+2. Add client and studio authentication.
+3. Add artist profiles and availability windows.
+4. Add deposit payment handling.
+5. Add waiver signing and consent record retention.
+6. Add notifications for booking updates.
+7. Add AI-assisted intake triage for style, placement, size, budget, risk notes, and missing details.
+
+## Deployment Notes
+
+The intended default host is Vercel for the Next.js application. The current MVP does not require a production database, but future production releases should add managed storage for bookings, users, deposits, waivers, media, and notifications.
+
+See `DEPLOYMENT.md` for environment details.
 
 ## Verification
 
-The current MVP has been built successfully with:
-
-
+Use the following commands before shipping changes:
 
 ```bash
+npm run lint
 npm run build
 ```
