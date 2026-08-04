@@ -105,9 +105,13 @@ npm run build
 
 Booking requests are stored locally in the browser under the key `tatme-bookings`, which makes the demo easy to run without a backend. The next phase will likely add database persistence, authentication, real availability, payment handling, and digital waivers.
 
+
+
 ## Verification
 
 The current MVP has been built successfully with:
+
+
 
 ```bash
 npm run build
