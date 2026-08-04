@@ -19,6 +19,8 @@ TatMe currently offers a working demo experience with:
 - A studio dashboard showing pending and confirmed requests
 - Local persistence of requests in the browser via `localStorage`
 
+
+
 ## Current stack
 
 - Next.js 14 App Router
@@ -29,6 +31,8 @@ TatMe currently offers a working demo experience with:
 - Remote image assets for the demo experience
 
 This MVP does not yet include a database, authentication, payments, or AI-assisted intake.
+
+
 
 ## Project structure
 
