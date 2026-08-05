@@ -14,8 +14,6 @@ Current booking requests are stored in the browser with `localStorage` under the
 
 ## MVP Features
 
-
-
 - Public tattoo gallery with style filters.
 - Design cards with artist, style, placement, size, price, deposit, and availability metadata.
 - Design selection that pre-fills booking guidance.
