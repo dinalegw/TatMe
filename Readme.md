@@ -1,5 +1,7 @@
 # TatMe
 
+
+
 TatMe is a tattoo booking MVP for artists and studios. It combines portfolio discovery, flash/design selection, booking intake, deposit and consent acknowledgement, and a lightweight studio review queue in one flow.
 
 The product goal is simple: help a client choose a tattoo, share the details a studio needs, and create a booking request without moving the conversation into DMs.
@@ -154,5 +156,6 @@ Use the following commands before shipping changes:
 
 ```bash
 npm run lint
+
 npm run build
 ```
