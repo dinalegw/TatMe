@@ -30,6 +30,8 @@ Current booking requests are stored in the browser with `localStorage` under the
 - Global CSS
 - Remote demo images
 
+
+
 ## Getting Started
 
 
