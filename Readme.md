@@ -21,8 +21,6 @@ Current booking requests are stored in the browser with `localStorage` under the
 - Studio dashboard with pending and confirmed booking requests.
 - Local confirmation action for studio review.
 
-
-
 ## Tech Stack
 
 - Next.js 14 App Router
