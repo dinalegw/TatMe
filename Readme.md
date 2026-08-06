@@ -10,7 +10,6 @@ TatMe is currently a frontend-only Next.js demo. It is useful for validating the
 
 Current booking requests are stored in the browser with `localStorage` under the key `tatme-bookings`.
 
-
 ## MVP Features
 
 - Public tattoo gallery with style filters.
