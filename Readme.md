@@ -4,6 +4,8 @@ TatMe is a tattoo booking MVP for artists and studios. It combines portfolio dis
 
 The product goal is simple: help a client choose a tattoo, share the details a studio needs, and create a booking request without moving the conversation into DMs.
 
+
+
 ## Current Status
 
 TatMe is currently a frontend-only Next.js demo. It is useful for validating the booking journey, studio workflow, and product direction before adding production services such as authentication, database persistence, payments, notifications, and AI-assisted intake.
